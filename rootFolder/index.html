@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Page Title Here</title>	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jcarousel.css">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/jquery.jcarousel.js"></script>
+    </head>
+
+<body>
+    <nav>
+        <ul>
+           <li><a href=""><img src="http://via.placeholder.com/50?text=LOGO" alt="logo"></a></li>
+        </ul>
+        <ul class="mainNav">
+            <li><a href="#">BUTTON01</a></li>
+            <li><a href="#">BUTTON02</a></li>
+            <li><a href="#">BUTTON03</a></li>
+            <li><a href="#">BUTTON04</a></li>
+            <li><a href="#">BUTTON05</a></li>
+        </ul>
+    </nav>
+        <header class="jcarouselWrapper">
+           <div class="jcarousel">
+            <ul>
+                <li><img src="http://devimg.com/500x300/oldtimers"></li>
+                <li><img src="http://lorempicsum.com/futurama/500/300/1"></li>
+                <li><img src="http://devimg.com/500x300/comics"></li>
+                <li><img src="http://devimg.com/500x300/movies"></li>
+            </ul>
+
+            <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
+
+            <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+
+            <p class="jcarousel-pagination" data-jcarouselpagination="true">
+            <a href="#1" class="active">1</a>
+            <a href="#2">2</a>
+            <a href="#3">3</a>
+            <a href="#4">4</a>
+            </p>
+            </div>
+        </header>
+        <main>
+          <header class="col12 padSm centBlock">
+              <h1 class="priHead">RECENT WORK</h1>
+          </header>
+           <section class="row col12 centBlock">
+                <article class="padSm rowEq">
+                    <figure><img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Describe your Image"></figure>
+                    <h2 class="terHead">Lorem ipsum.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit inventore quibusdam quisquam facere pariatur ab, tempora, magnam totam quidem atque obcaecati ipsum minima sequi ipsa, voluptate nam perspiciatis delectus consectetur!</p>
+                </article>
+                <article class="padSm rowEq">
+                    <figure><img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Describe your Image"></figure>
+                    <h2 class="terHead">Sapiente, maxime!</h2>
+                    <p>Libero dolorum nulla ipsa a quos suscipit nostrum optio quia eligendi praesentium adipisci, et incidunt quis? Voluptate expedita, quod doloremque minima placeat praesentium officiis natus, dolor, vel consectetur distinctio delectus!</p>
+                </article>
+                <article class="padSm rowEq">
+                    <figure><img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Describe your Image"></figure>
+                    <h2 class="terHead">Saepe, esse?</h2>
+                    <p>Ea beatae eveniet culpa voluptas officia nam ipsam quae nemo, sapiente a dolore reiciendis magni dolorem maxime aliquam pariatur dignissimos enim nobis repudiandae quam. Nam omnis adipisci numquam cumque sed.</p>
+                </article>
+            </section>
+        </main>
+    <script>
+        $(function() {
+            $('.jcarousel').jcarousel({
+                // Configuration goes here
+                wrap: 'circular',
+                pagination: 'true',
+            });
+            
+            $('.jcarousel-control-prev')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '-=1'
+            });
+
+        $('.jcarousel-control-next')
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .jcarouselControl({
+                target: '+=1'
+            });
+        
+        $('.jcarousel-pagination')
+            .on('jcarouselpagination:active', 'a', function() {
+                $(this).addClass('active');
+            })
+            .on('jcarouselpagination:inactive', 'a', function() {
+                $(this).removeClass('active');
+            })
+            .jcarouselPagination();        
+        }); 
+    </script>
+</body>
+</html>
