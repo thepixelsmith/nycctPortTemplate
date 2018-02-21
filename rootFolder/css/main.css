@@ -1,3 +1,7 @@
+/************************
+Sets the main formatting for block level elements
+*************************/
+
 body{
     background-color: ;
     background-image: url();
@@ -9,7 +13,25 @@ nav, header, section, article, main, div{
     box-sizing: border-box;
 }
 
-/* These rules control the nav bar*/
+h1{
+    font-size: 2em;
+    font-weight: bolder;
+    line-height: 0;
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/************************* 
+These rules control the nav bar
+*************************/
 
 nav{
     width: 100%;
@@ -39,9 +61,13 @@ nav a{
     margin: 0 2%;
 }
 
-.featureBox{
-    
-}
+
+
+
+
+/*************************
+These rules control the row and column structure
+*************************/
 
 .row{
     display: flex;
@@ -60,6 +86,9 @@ nav a{
 .rowEq{
     flex: 1 1 0;
 }
+/*************************
+These rules set column length. This system operates on a 12 column grid
+*************************/
 
 .col12{
     width: 98%;
@@ -109,6 +138,10 @@ nav a{
     width: 8.2%
 }
 
+/*************************
+These rules control centering of elements
+*************************/
+
 .centBlock{
     margin: 0 auto;
 }
@@ -117,6 +150,9 @@ nav a{
     text-align: center;
 }
 
+/*************************
+These rules control the structure of elements
+*************************/
 .imgRes{
     max-width: 100%;
 }
@@ -133,22 +169,18 @@ nav a{
     padding: 5%;
 }
 
-.priHead{
-    font-size: 2em;
-    font-weight: bolder;
-    line-height: 0;
+
+
+/*************************
+These rules control the element skins
+*************************/
+.featureBox{
+    
 }
 
-.secHead{
-    font-size: 1.5em;
-    font-weight: bold;
+.mediaBox{
+    
 }
-
-.terHead{
-    font-size: 1.25em;
-    font-weight: bold;
-}
-
 
 
 
