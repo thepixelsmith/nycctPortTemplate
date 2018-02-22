@@ -79,13 +79,18 @@ These rules control the row and column structure
 .col{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    //flex-wrap: nowrap;
     //justify-content: space-between;
 }
 
 .rowEq{
     flex: 1 1 0;
 }
+
+.multiRow{
+    flex-wrap: wrap;
+}
+
 /*************************
 These rules set column length. This system operates on a 12 column grid
 *************************/
@@ -168,8 +173,6 @@ These rules control the structure of elements
 .padLg{
     padding: 5%;
 }
-
-
 
 /*************************
 These rules control the element skins
