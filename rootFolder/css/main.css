@@ -9,7 +9,7 @@ body{
     
 }
 
-nav, header, section, article, main, div{
+nav, header, section, article, main, div, figcaption{
     box-sizing: border-box;
 }
 
@@ -35,7 +35,6 @@ These rules control the nav bar
 
 nav{
     width: 100%;
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -61,9 +60,12 @@ nav a{
     margin: 0 2%;
 }
 
+/*************************
 
+• • • STRUCTURE • • • STRUCTURE • • • STRUCTURE • • •
+• • • STRUCTURE • • • STRUCTURE • • • STRUCTURE • • •
 
-
+*************************/
 
 /*************************
 These rules control the row and column structure
@@ -148,7 +150,8 @@ These rules control centering of elements
 *************************/
 
 .centBlock{
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .centInline{
@@ -162,28 +165,94 @@ These rules control the structure of elements
     max-width: 100%;
 }
 
+.mediaBox{
+    position: relative;
+    overflow: hidden;
+    width: auto;
+}
+
+.mediaBox figcaption{
+    display:inline;
+    width:auto;
+    padding: 1%;
+    margin:0%;
+    position:absolute;
+    z-index:5;
+    left: 0;
+    bottom:-50%;
+    transition: bottom 1s;
+}
+
+.mediaBox:hover figcaption{
+  bottom:2%;
+  transition: bottom 1s;
+}
+
 .padSm{
     padding: 1%;
 }
 
 .padMed{
-    padding: 3%;
+    padding: 2%;
 }
 
 .padLg{
-    padding: 5%;
+    padding: 3%;
+}
+
+.vertAlignCent{
+    align-items: center;
+}
+
+.vertMarSm{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.vertMarMed{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.vertMarLg{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+
+/*************************
+
+• • • SKINS • • • SKINS • • • SKINS • • •
+• • • SKINS • • • SKINS • • • SKINS • • •
+
+*************************/
+
+/*************************
+These rules control the element Backgrounds
+*************************/
+.BGLight{
+    background-color: rgba(220,220,220,1);
+}
+
+.BGMed{
+    
+}
+
+.BGDark{
+    
 }
 
 /*************************
-These rules control the element skins
+These rules control the borders 
 *************************/
-.featureBox{
+.borBotSmDrkDrk{
     
 }
 
-.mediaBox{
-    
+.borBotMedDrk{
+    border-bottom: solid rgba(50,50,50,1) 2px;
 }
 
-
-
+.borBotLgDrk{
+    
+}
