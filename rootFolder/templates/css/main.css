@@ -74,7 +74,7 @@ These rules control the row and column structure
 .row{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    //flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -180,12 +180,12 @@ These rules control the structure of elements
     z-index:5;
     left: 0;
     bottom:-50%;
-    transition: bottom 1s;
+    transition: bottom 500ms;
 }
 
 .mediaBox:hover figcaption{
   bottom:2%;
-  transition: bottom 1s;
+  transition: bottom 500ms;
 }
 
 .padSm{
@@ -230,16 +230,20 @@ These rules control the structure of elements
 /*************************
 These rules control the element Backgrounds
 *************************/
-.BGLight{
+.BGLgt{
     background-color: rgba(220,220,220,1);
 }
 
 .BGMed{
-    
+    background-color: rgba(100,100,100,1);
 }
 
-.BGDark{
-    
+.BGDrk{
+    background-color: rgba(50,50,50,1);
+}
+
+.BGDrkTr{
+    background-color: rgba(50,50,50,.5);
 }
 
 /*************************
@@ -256,3 +260,68 @@ These rules control the borders
 .borBotLgDrk{
     
 }
+
+/*************************
+
+MEDIA QUERIES 
+
+*************************/
+
+@media screen and (max-width:750px){
+    
+}
+
+@media screen and (max-width:500px){
+    .noRow{
+        
+    }
+    .smCol12{
+        width: 98%;
+    }
+
+    .smCol11{
+        width: 89%;
+    }
+
+    .smCol10{
+        width: 81%;
+    }
+
+    .smCol9{
+        width: 73%;
+    }
+
+    .smCol8{
+        width: 65%;
+    }
+
+    .smCol7{
+        width: 57%;
+    }
+
+    .smCol6{
+        width: 49%;
+    }
+
+    .smCol5{
+        width: 41%;
+    }
+
+    .smCol4{
+        width: 32.7%;
+    }
+
+    .smCol3{
+        width: 24.5%;
+    }
+
+    .smCol2{
+        width: 16.3% 
+    }
+
+    .smCol1{
+        width: 8.2%
+    }
+
+}
+

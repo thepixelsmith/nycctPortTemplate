@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Page Title Here</title>	
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/reset.css" rel="stylesheet">
-    <link href="../css/main.css" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     </head>
 
 <body>
-    <nav class="BGLight">
+    <nav class="BGLgt">
         <ul>
            <li><a href=""><img src="http://via.placeholder.com/50?text=LOGO" alt="logo"></a></li>
         </ul>
@@ -25,7 +25,7 @@
             <li><a href="#" target="_self">BUTTON 05</a></li>
         </ul>
     </nav>
-        <header class="padMed borBotMedDrk" >
+        <header class="padMed borBotMedDrk">
            <h1>Jon L. Doe</h1>
         </header>
         <main>
@@ -37,7 +37,7 @@
            <section class="row col10 centBlock multiRow">
                 <article class="padSm col4">
                     <figure class="mediaBox"><img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Describe your Image">
-                    <figcaption>
+                    <figcaption class="BGDrkTr">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis aliquid consequatur ullam recusandae.
                     </figcaption>
                     </figure>
@@ -46,7 +46,7 @@
                 </article>
                 <article class="padSm col4">
                     <figure class="mediaBox"><img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Describe your Image">
-                    <figcaption>
+                    <figcaption class="BGDrkTr">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis aliquid consequatur ullam recusandae.
                     </figcaption>
                     </figure>
@@ -55,7 +55,7 @@
                 </article>
                 <article class="padSm col4">
                     <figure class="mediaBox"><img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Describe your Image">
-                    <figcaption>
+                    <figcaption class="BGDrkTr">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis aliquid consequatur ullam recusandae.
                     </figcaption>
                     </figure>
@@ -64,16 +64,16 @@
                 </article>
                 <article class="padSm col4">
                     <figure class="mediaBox"><img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Describe your Image">
-                    <figcaption>
+                    <figcaption class="BGDrkTr">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis aliquid consequatur ullam recusandae.
                     </figcaption>
                     </figure>
                     <h3>Lorem ipsum.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit inventore quibusdam quisquam facere pariatur ab, tempora, magnam totam quidem atque obcaecati ipsum minima sequi ipsa, voluptate nam perspiciatis delectus consectetur!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit inventore quibusdam quisquam facere pariatur ab, tempora, magnam totam quidem atque obcaecati ipsum minima sequi ipsa, voluptate nam perspiciatis delec tus consectetur!</p>
                 </article>
                 <article class="padSm col4">
                     <figure class="mediaBox"><img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Describe your Image">
-                    <figcaption>
+                    <figcaption class="BGDrkTr">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis aliquid consequatur ullam recusandae.
                     </figcaption>
                     </figure>
@@ -82,7 +82,7 @@
                 </article>
                 <article class="padSm col4">
                     <figure class="mediaBox"><img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Describe your Image">
-                    <figcaption>
+                    <figcaption class="BGDrkTr">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci omnis aliquid consequatur ullam recusandae.
                     </figcaption>
                     </figure>
@@ -90,57 +90,22 @@
                     <p>Ea beatae eveniet culpa voluptas officia nam ipsam quae nemo, sapiente a dolore reiciendis magni dolorem maxime aliquam pariatur dignissimos enim nobis repudiandae quam. Nam omnis adipisci numquam cumque sed.</p>
                 </article>
             </section>
-            <section class="row vertMarLg BGLight vertAlignCent">
-                <article class="rowEq">
+            <section class="row vertMarLg BGLgt vertAlignCent">
+                <article class="col6">
                     <figure>
-                        <img class="imgRes" src="http://via.placeholder.com/800x400?text=ARTWORK" alt="Artwork Name">
+                        <img class="imgRes" src="http://via.placeholder.com/1200x500?text=ARTWORK" alt="Artwork Name">
                     </figure>
                 </article>
-                <article class="rowEq padSm">
+                <article class="col6 padSm">
                     <h2>Lorem ipsum.</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis dolore, dolor maiores, similique possimus culpa. Sed quasi deleniti voluptates, laboriosam nobis esse minus quia accusantium quo fugit ut incidunt eos!</p>
                 </article>
             </section>
         </main>
-    <script>
-        $(function() {
-            $('.jcarousel').jcarousel({
-                // Configuration goes here
-                wrap: 'circular',
-                pagination: 'true',
-            });
-            
-            $('.jcarousel-control-prev')
-            .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
-            })
-            .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
-            })
-            .jcarouselControl({
-                target: '-=1'
-            });
-
-        $('.jcarousel-control-next')
-            .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
-            })
-            .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
-            })
-            .jcarouselControl({
-                target: '+=1'
-            });
-        
-        $('.jcarousel-pagination')
-            .on('jcarouselpagination:active', 'a', function() {
-                $(this).addClass('active');
-            })
-            .on('jcarouselpagination:inactive', 'a', function() {
-                $(this).removeClass('active');
-            })
-            .jcarouselPagination();        
-        }); 
-    </script>
+        <footer class="padSm">
+                <p class="centInline">
+                    &copy; Copyright 2017 | Jon L Doe | All Rights Reserved 
+                </p>
+        </footer>
 </body>
 </html>
