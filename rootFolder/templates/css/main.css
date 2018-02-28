@@ -2,38 +2,46 @@
 Sets the main formatting for block level elements
 *************************/
 
-body{
+body {
     background-color: ;
     background-image: url();
     font-family: 'san francisco', roboto, Helvetica Nueu, Helvetica, Calibri, Arial, sans-serif;
-    
 }
 
-nav, header, section, article, main, div, figcaption, ul, li{
+nav,
+header,
+section,
+article,
+main,
+div,
+figcaption,
+ul,
+li {
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     font-size: 2em;
     font-weight: bolder;
     line-height: 0;
 }
 
-h2{
+h2 {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-h3{
+h3 {
     font-size: 1.25em;
     font-weight: bold;
 }
+
 
 /************************* 
 These rules control the nav bar
 *************************/
 
-nav{
+nav {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -43,65 +51,68 @@ nav{
     line-height: 0;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: inherit;
 }
 
-.mainNav{
+.mainNav {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;    
+    justify-content: flex-end;
 }
 
-.mainNav li{
+.mainNav li {
     margin: 0 2%;
     padding: .5% 0;
     text-transform: uppercase;
 }
 
-.mainNav li:hover{
-    color: rgb(255,255,255);
+.mainNav li:hover {
+    color: rgb(255, 255, 255);
 }
-    
+
+
 /*************************
 
 • • • STRUCTURE • • • STRUCTURE • • • STRUCTURE • • •
 • • • STRUCTURE • • • STRUCTURE • • • STRUCTURE • • •
 
 *************************/
+
 
 /*************************
 These rules control the row and column structure
 *************************/
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
     //flex-wrap: nowrap;
     justify-content: space-between;
 }
 
-.col{
+.col {
     display: flex;
     flex-direction: column;
     //flex-wrap: nowrap;
     //justify-content: space-between;
 }
 
-.rowEq{
+.rowEq {
     flex: 1 1 0;
 }
 
-.multiRow{
+.multiRow {
     flex-wrap: wrap;
 }
 
+
 /*************************
 These rules set column length. This system operates on a 12 column grid
-*************************/
+
 
 .col12{
     width: 98%;
@@ -150,77 +161,81 @@ These rules set column length. This system operates on a 12 column grid
 .col1{
     width: 8.2%
 }
+*************************/
+
 
 /*************************
 These rules control centering of elements
 *************************/
 
-.centBlock{
+.centBlock {
     margin-right: auto;
     margin-left: auto;
 }
 
-.centInline{
+.centInline {
     text-align: center;
 }
+
 
 /*************************
 These rules control the structure of elements
 *************************/
-.imgRes{
+
+.imgRes {
     max-width: 100%;
 }
 
-.mediaBox{
+.mediaBox {
     position: relative;
     overflow: hidden;
     width: auto;
 }
 
-.mediaBox figcaption{
-    display:inline;
-    width:auto;
+.mediaBox figcaption {
+    display: inline;
+    width: auto;
     padding: 1%;
-    margin:0%;
-    position:absolute;
-    z-index:5;
+    margin: 0%;
+    position: absolute;
+    z-index: 5;
     left: 0;
-    bottom:-50%;
+    bottom: -50%;
     transition: bottom 500ms;
 }
 
-.mediaBox:hover figcaption{
-  bottom:2%;
-  transition: bottom 500ms;
+.mediaBox:hover figcaption {
+    bottom: 2%;
+    transition: bottom 500ms;
 }
 
-.padSm{
+.padSm {
     padding: 1%;
 }
 
-.padMed{
+.padMed {
     padding: 2%;
 }
 
-.padLg{
+.padLg {
     padding: 3%;
 }
 
-.vertAlignCent{
+.vertAlignCent {
     align-items: center;
 }
 
-.vertMarSm{
+.vertMarSm {
     margin-top: 1%;
     margin-bottom: 1%;
 }
 
-.vertMarMed{
+.vertMarMed {
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
-.vertMarLg{
+.vertMarLg {
     margin-top: 3%;
     margin-bottom: 3%;
 }
@@ -233,39 +248,40 @@ These rules control the structure of elements
 
 *************************/
 
+
 /*************************
 These rules control the element Backgrounds
 *************************/
-.BGLgt{
-    background-color: rgba(220,220,220,1);
+
+.BGLgt {
+    background-color: rgba(220, 220, 220, 1);
 }
 
-.BGMed{
-    background-color: rgba(100,100,100,1);
+.BGMed {
+    background-color: rgba(100, 100, 100, 1);
 }
 
-.BGDrk{
-    background-color: rgba(50,50,50,1);
+.BGDrk {
+    background-color: rgba(50, 50, 50, 1);
 }
 
-.BGDrkTr{
-    background-color: rgba(50,50,50,.5);
+.BGDrkTr {
+    background-color: rgba(50, 50, 50, .5);
 }
+
 
 /*************************
 These rules control the borders 
 *************************/
-.borBotSmDrkDrk{
-    
+
+.borBotSmDrkDrk {}
+
+.borBotMedDrk {
+    border-bottom: solid rgba(50, 50, 50, 1) 2px;
 }
 
-.borBotMedDrk{
-    border-bottom: solid rgba(50,50,50,1) 2px;
-}
+.borBotLgDrk {}
 
-.borBotLgDrk{
-    
-}
 
 /*************************
 
@@ -273,61 +289,86 @@ MEDIA QUERIES
 
 *************************/
 
-@media screen and (max-width:750px){
-    
-}
-
-@media screen and (max-width:500px){
-    .noRow{
-        
-    }
-    .smCol12{
+@media screen and (max-width:1920px) {
+    /*************************
+    These rules set column length. This system operates on a 12 column grid
+    *************************/
+    .col12 {
         width: 98%;
     }
-
-    .smCol11{
+    .col11 {
         width: 89%;
     }
-
-    .smCol10{
+    .col10 {
         width: 81%;
     }
-
-    .smCol9{
+    .col9 {
         width: 73%;
     }
-
-    .smCol8{
+    .col8 {
         width: 65%;
     }
-
-    .smCol7{
+    .col7 {
         width: 57%;
     }
-
-    .smCol6{
+    .col6 {
         width: 49%;
     }
-
-    .smCol5{
+    .col5 {
         width: 41%;
     }
-
-    .smCol4{
+    .col4 {
         width: 32.7%;
     }
-
-    .smCol3{
+    .col3 {
         width: 24.5%;
     }
-
-    .smCol2{
-        width: 16.3% 
+    .col2 {
+        width: 16.3%
     }
-
-    .smCol1{
+    .col1 {
         width: 8.2%
     }
-
 }
 
+@media screen and (max-width:750px) {}
+
+@media screen and (max-width:500px) {
+    .noRow {}
+    .smCol12 {
+        width: 98%;
+    }
+    .smCol11 {
+        width: 89%;
+    }
+    .smCol10 {
+        width: 81%;
+    }
+    .smCol9 {
+        width: 73%;
+    }
+    .smCol8 {
+        width: 65%;
+    }
+    .smCol7 {
+        width: 57%;
+    }
+    .smCol6 {
+        width: 49%;
+    }
+    .smCol5 {
+        width: 41%;
+    }
+    .smCol4 {
+        width: 32.7%;
+    }
+    .smCol3 {
+        width: 24.5%;
+    }
+    .smCol2 {
+        width: 16.3%
+    }
+    .smCol1 {
+        width: 8.2%
+    }
+}
