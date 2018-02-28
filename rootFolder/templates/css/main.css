@@ -9,7 +9,7 @@ body{
     
 }
 
-nav, header, section, article, main, div, figcaption{
+nav, header, section, article, main, div, figcaption, ul, li{
     box-sizing: border-box;
 }
 
@@ -58,8 +58,14 @@ nav a{
 
 .mainNav li{
     margin: 0 2%;
+    padding: .5% 0;
+    text-transform: uppercase;
 }
 
+.mainNav li:hover{
+    color: rgb(255,255,255);
+}
+    
 /*************************
 
 • • • STRUCTURE • • • STRUCTURE • • • STRUCTURE • • •
