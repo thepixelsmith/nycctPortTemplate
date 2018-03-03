@@ -18,6 +18,7 @@ figcaption,
 ul,
 li {
     box-sizing: border-box;
+    position: relative;
 }
 
 h1 {
@@ -49,6 +50,7 @@ nav {
     align-items: center;
     padding: .25% 2%;
     line-height: 0;
+    
 }
 
 nav a {
@@ -182,6 +184,10 @@ These rules control centering of elements
 These rules control the structure of elements
 *************************/
 
+.active{
+    display: none;    
+}
+
 .imgRes {
     max-width: 100%;
 }
@@ -240,7 +246,13 @@ These rules control the structure of elements
     margin-bottom: 3%;
 }
 
+.botMarSm{
+    margin-bottom: 1%;
+}
 
+.toggleNav{
+    display: none;
+}
 /*************************
 
 • • • SKINS • • • SKINS • • • SKINS • • •
@@ -335,6 +347,9 @@ MEDIA QUERIES
 
 @media screen and (max-width:500px) {
     .noRow {}
+    /******************************
+    Sets the column Structure for Small Screens
+    *******************************/
     .smCol12 {
         width: 98%;
     }
@@ -371,4 +386,47 @@ MEDIA QUERIES
     .smCol1 {
         width: 8.2%
     }
+    
+    /*************************
+    Mobile Navigation
+    **************************/
+    .smHide{
+        display: none;
+    }
+    
+    .toggleNav{
+    display: block;
+    }
+    
+    .mainNav{
+        position: absolute;
+        top: 100%;
+        left:0;
+        //display: block;
+        flex-direction: column;
+        background-color: aqua;
+        z-index: 50;
+        padding: 1% 0 1% 2%;
+        /*
+         width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+        */
+    }
+    .mainNav li {
+        margin: 2% 0;
+        width: 50%;
+        //background-color: antiquewhite;
+        padding: 5% 0;
+    }
+
+    .mainNav li:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    .smBotMarSm{
+    margin-bottom: 3%;
+}
 }
