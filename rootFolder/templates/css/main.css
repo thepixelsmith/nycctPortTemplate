@@ -24,7 +24,7 @@ li {
 h1 {
     font-size: 2em;
     font-weight: bolder;
-    line-height: 0;
+    line-height: 50%;
 }
 
 h2 {
@@ -50,7 +50,6 @@ nav {
     align-items: center;
     padding: .25% 2%;
     line-height: 0;
-    
 }
 
 nav a {
@@ -184,8 +183,8 @@ These rules control centering of elements
 These rules control the structure of elements
 *************************/
 
-.active{
-    display: none;    
+.active {
+    display: none;
 }
 
 .imgRes {
@@ -246,13 +245,16 @@ These rules control the structure of elements
     margin-bottom: 3%;
 }
 
-.botMarSm{
+.botMarSm {
     margin-bottom: 1%;
 }
 
-.toggleNav{
+.toggleNav {
     display: none;
+    font-size: 2.5em;
 }
+
+
 /*************************
 
 • • • SKINS • • • SKINS • • • SKINS • • •
@@ -305,6 +307,9 @@ MEDIA QUERIES
     /*************************
     These rules set column length. This system operates on a 12 column grid
     *************************/
+    .colAuto {
+        width: auto;
+    }
     .col12 {
         width: 98%;
     }
@@ -350,6 +355,12 @@ MEDIA QUERIES
     /******************************
     Sets the column Structure for Small Screens
     *******************************/
+    .smMultiRow {
+        flex-wrap: wrap;
+    }
+    .smColAuto {
+        width: auto;
+    }
     .smCol12 {
         width: 98%;
     }
@@ -386,25 +397,22 @@ MEDIA QUERIES
     .smCol1 {
         width: 8.2%
     }
-    
     /*************************
     Mobile Navigation
     **************************/
-    .smHide{
+    .smHide {
         display: none;
     }
-    
-    .toggleNav{
-    display: block;
+    .toggleNav {
+        display: block;
     }
-    
-    .mainNav{
+    .mainNav {
         position: absolute;
         top: 100%;
-        left:0;
+        left: 0;
         //display: block;
         flex-direction: column;
-        background-color: aqua;
+        background-color: ;
         z-index: 50;
         padding: 1% 0 1% 2%;
         /*
@@ -421,12 +429,13 @@ MEDIA QUERIES
         //background-color: antiquewhite;
         padding: 5% 0;
     }
-
     .mainNav li:hover {
         color: rgb(255, 255, 255);
     }
-    
-    .smBotMarSm{
-    margin-bottom: 3%;
-}
+    .smBotMarSm {
+        margin-bottom: 3%;
+    }
+    .smTopMarSm {
+        margin-top: 3%;
+    }
 }
