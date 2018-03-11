@@ -461,4 +461,11 @@ MEDIA QUERIES
     .mediaBoxHero{
         display: none;
     }
+    .cellVert{
+        display: block;
+        width:100%;
+        padding:0;
+        margin-bottom: .5%;
+        margin-top: 2%;
+    }
 }
