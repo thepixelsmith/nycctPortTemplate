@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Title Here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!----------------------------
+   THESE ARE THE LINKS TO THE JAVASCRIPT FILES
+   ------------------------------>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <!----------------------------
+   THESE ARE THE LINKS TO THE CSS FILES
+   ------------------------------>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet"> </head>
+
+<body>
+    <!----------------------------
+   THIS IS THE NAV MENU -- CHANGE THE VALUE OF THE HREFS TO YOUR PAGE URLS
+   ------------------------------>
+    <nav class="BGLgt botMarSm">
+        <ul class="smBotMarSm smTopMarSm">
+            <li>
+                <a href=""><img src="http://via.placeholder.com/50?text=LOGO" alt="logo"></a>
+            </li>
+        </ul>
+        <ul class="mainNav BGLgt smHide">
+            <li><a href="#" target="_self">Home</a></li>
+            <li><a href="#" target="_self">Portfolio</a></li>
+            <li><a href="#" target="_self">About Me</a></li>
+            <li><a href="#" target="_self">Contact</a></li>
+        </ul> <a class="toggleNav" href="#">&#9776;</a> </nav>
+    <!----------------------------
+   THIS IS THE PAGE HEADER
+   ------------------------------>
+    <header class="padMed borBotMedDrk smBotMarSm smTopMarSm">
+        <h1>Contact Me</h1> </header>
+    <!----------------------------
+   THIS IS THE MAIN PAGE CONTENT
+   ------------------------------>
+    <main>
+        <section class="row col9 smCol11 centBlock vertMarLg BGLgt smMultiRow">
+            <section class="col6 centBlock padSm">
+               <!----------------------------
+               THIS FORM IS GENERATED USING
+               https://www.thesitewizard.com/wizards/feedbackform.shtml
+               YOU WILL NEED TO VISIT THIS SITE AND USE THE FEEDBACK FORM WIZARD TO GENERATE THE PHP CODE TO MAKE IT FUNCTION FOR YOUR SITE.
+               ------------------------------>
+                <form class="" action="php/feedback.php" method="post" id="tswfbform" accept-charset="UTF-8">
+                   <table width="100%">
+                       <tr>
+                           <td class="padSm" width="40%" align="left" valign="top">
+                               <label for="tswname">NAME:</label>
+                           </td>
+                           <td class="padSm" width="60%" align="left" valign="top">
+                               <input type="text" name="fullname" style="max-width: 100%;" id="tswname" size="47" />
+                           </td>
+                       </tr>
+                       <tr>
+                           <td class="padSm" width="40%" align="left" valign="top">
+                               <label for="tswemail">EMAIL:</label>
+                           </td>
+                           <td class="padSm" width="60%" align="left" valign="top">
+                               <input type="text" style="max-width: 100%;" id="tswemail" name="email" size="47" />
+                           </td>
+                       </tr>
+                       <tr>
+                           <td class="padSm" width="40%" align="left" valign="top" style="vertical-align: top;">
+                               <label for="tswcomments">COMMENTS:</label>
+                           </td>
+                           <td class="padSm" width="60%" align="left" valign="top">
+                               <textarea rows="15" cols="45" name="comments" style="max-width: 100%;" id="tswcomments"></textarea>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td class="padSm" width="40%" align="left" valign="top">
+                               &nbsp;
+                           </td>
+                           <td class="padSm" width="60%" align="left" valign="top">
+                               <input id="tswsubmit" type="submit" value="Send Feedback" />
+                           </td>
+                       </tr>
+                   </table>
+                </form>
+            </section>
+        </section>
+    </main>
+    <!----------------------------
+   THIS IS THE FOOTER CONTENT
+   ------------------------------>
+    <footer class="padSm">
+        <p class="centInline"> &copy; Copyright 2017 | Jon L Doe | All Rights Reserved </p>
+    </footer>
+</body>
+
+</html>

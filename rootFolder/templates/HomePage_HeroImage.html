@@ -8,11 +8,10 @@
    THESE ARE THE LINKS TO THE JAVASCRIPT FILES
    ------------------------------>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/jquery.jcarousel.js"></script>
+    <script src="js/toggleMenu.js"></script>
     <!----------------------------
    THESE ARE THE LINKS TO THE CSS FILES
    ------------------------------>
-    <link href="css/jcarousel.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     
@@ -22,21 +21,18 @@
    <!----------------------------
    THIS IS THE NAV MENU -- CHANGE THE VALUE OF THE HREFS TO YOUR PAGE URLS
    ------------------------------>
-    <nav>
-        <ul>
-           <li><a href=""><img src="http://via.placeholder.com/50?text=LOGO" alt="logo"></a></li>
+    <nav class="BGLgt botMarSm">
+        <ul class="smBotMarSm smTopMarSm">
+            <li>
+                <a href=""><img src="http://via.placeholder.com/50?text=LOGO" alt="logo"></a>
+            </li>
         </ul>
-        <ul class="mainNav">
-            <li><a href="#" target="_self">BUTTON 01</a></li>
-            <li>|</li>
-            <li><a href="#" target="_self">BUTTON 02</a></li>
-            <li>|</li>
-            <li><a href="#" target="_self">BUTTON 03</a></li>
-            <li>|</li>
-            <li><a href="#" target="_self">BUTTON 04</a></li>
-            <li>|</li>
-            <li><a href="#" target="_self">BUTTON 05</a></li>
-        </ul>
+        <ul class="mainNav BGLgt smHide">
+            <li><a href="#" target="_self">Home</a></li>
+            <li><a href="#" target="_self">Portfolio</a></li>
+            <li><a href="#" target="_self">About Me</a></li>
+            <li><a href="#" target="_self">Contact</a></li>
+        </ul> <a class="toggleNav" href="#">&#9776;</a> 
     </nav>
         <!----------------------------
            THIS IS THE PAGE HEADER
@@ -47,26 +43,15 @@
        <!----------------------------
            THIS IS THE PAGE SLIDESHOW CONTENT
        ------------------------------>
-        <section class="jcarouselWrapper">
-           <div class="jcarousel">
-            <ul>
-                <li><img src="http://devimg.com/500x300/oldtimers"></li>
-                <li><img src="http://lorempicsum.com/futurama/500/300/1"></li>
-                <li><img src="http://devimg.com/500x300/comics"></li>
-                <li><img src="http://devimg.com/500x300/movies"></li>
-            </ul>
-
-            <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
-
-            <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
-
-            <p class="jcarousel-pagination" data-jcarouselpagination="true">
-            <a href="#1" class="active">1</a>
-            <a href="#2">2</a>
-            <a href="#3">3</a>
-            <a href="#4">4</a>
-            </p>
-            </div>
+        <section class="">
+           <figure>
+                <img class="imgRes" src="http://via.placeholder.com/1920x650?text=HERO ARTWORK" alt="Describe your Image" >  
+           </figure>
+           <article class="mediaBoxHero">
+               <h2 class="botMarSm">Welcome to my site</h2>
+               <p class="botMarSm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reiciendis quas vitae aspernatur, natus error totam omnis unde magnam quisquam expedita sapiente asperiores eligendi, ullam enim fugit impedit iusto, atque.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur reiciendis quas vitae aspernatur, natus error totam omnis unde magnam quisquam expedita sapiente asperiores eligendi, ullam enim fugit impedit iusto, atque.</p>
+           </article>
         </section>
          <!----------------------------
            THIS IS THE MAIN PAGE CONTENT
