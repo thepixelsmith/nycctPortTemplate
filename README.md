@@ -1,7 +1,7 @@
 # nycctPortTemplate
 Template for portfolio projects for the NYCCT Web 1 class<br>
 The purpose of this repository is to contain the template for use in the web design 1 classes.<br>
-The template is responsive. Currently it possess three media queries, though only the largest and smallest are currently populated. The smaller media query switches the layout to a hamburger (&#9776;) menu
+The template is responsive. Currently it possess three media queries, though only the largest and smallest are currently populated. 
 
 <h1>Main Folder</h1>
 <em>Templates</em><br>
@@ -23,3 +23,5 @@ This folder contains a live, testable, linked version of the template files. An 
     <li> Recreate the PHP file using the wizard that created it in the first place. The contact form was created using the free feedback form wizard from www.sitewizard.com. You can find the wizard here: https://www.thesitewizard.com/wizards/feedbackform.shtml (right-click open in new tab)</li>
   </ol>
 </p>
+<h1>Responsive Template</h1>
+This template is responsive. This means that it is built using flexible grids and media queries to fit a large range of screen sizes well. The template uses a 12 column grid system built which uses percent as the unit of measure. Using media queries, the pages will shift layouts by adjusting css to adjust the layout of the content. Instead of chasing specific phone sizes (which will inevitably change) this template's media queries shift whenever the content requires it. In this way the content drives the design, not the need to fit arbitrary phone screen sizes. The smaller media query switches the layout to a hamburger (&#9776;) menu. 
