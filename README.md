@@ -1,7 +1,7 @@
 # nycctPortTemplate
 Template for portfolio projects for the NYCCT Web 1 class<br>
 The purpose of this repository is to contain the template for use in the web design 1 classes.<br>
-
+The template is responsive. Currently it possess three media queries, though only the largest and smallest are currently populated. The smaller media query switches the layout to a hamburger (&#9776;) menu
 
 <h1>Main Folder</h1>
 <em>Templates</em><br>
