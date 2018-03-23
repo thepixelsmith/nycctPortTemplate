@@ -27,4 +27,5 @@ This folder contains a live, testable, linked version of the template files. An 
 This template is responsive.<br>
 This means that it is built using flexible grids and media queries to fit a large range of screen sizes well.<br>
 This template uses a 12 column grid system which uses percent as the main unit of measure.<br>
-Using media queries, the pages will shift layouts by adjusting css to adjust the layout of the content. Instead of chasing specific phone sizes (which will inevitably change) this template's media queries shift whenever the content requires it. In this way the content drives the design, not the need to fit arbitrary phone screen sizes. The smaller media query switches the layout to a hamburger (&#9776;) menu. 
+Using media queries, the pages will shift layouts by adjusting css to adjust the layout of the content. Instead of chasing specific phone sizes (which will inevitably change) this template's media queries shift whenever the content requires it. In this way the content drives the design, not the need to fit arbitrary phone screen sizes.<br>
+The smaller media query switches the layout to a hamburger (&#9776;) menu. 
