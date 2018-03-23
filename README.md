@@ -1,5 +1,7 @@
 # nycctPortTemplate
-Template for portfolio projects for the NYCCT Web 1 class
+Template for portfolio projects for the NYCCT Web 1 class<br>
+The purpose of this repository is to contain the template for use in the web design 1 classes. The 
+
 <h2>Main Folder</h2>
 <em>rootfolder/templates</em><br>
 This folder contains all of the HTML, CSS and Javascript files that are custom made for this project. The project also makes use of the JQuery library hosted by google. 
