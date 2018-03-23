@@ -24,4 +24,7 @@ This folder contains a live, testable, linked version of the template files. An 
   </ol>
 </p>
 <h1>Responsive Template</h1>
-This template is responsive. This means that it is built using flexible grids and media queries to fit a large range of screen sizes well. The template uses a 12 column grid system built which uses percent as the unit of measure. Using media queries, the pages will shift layouts by adjusting css to adjust the layout of the content. Instead of chasing specific phone sizes (which will inevitably change) this template's media queries shift whenever the content requires it. In this way the content drives the design, not the need to fit arbitrary phone screen sizes. The smaller media query switches the layout to a hamburger (&#9776;) menu. 
+This template is responsive.<br>
+This means that it is built using flexible grids and media queries to fit a large range of screen sizes well.<br>
+This template uses a 12 column grid system which uses percent as the main unit of measure.<br>
+Using media queries, the pages will shift layouts by adjusting css to adjust the layout of the content. Instead of chasing specific phone sizes (which will inevitably change) this template's media queries shift whenever the content requires it. In this way the content drives the design, not the need to fit arbitrary phone screen sizes. The smaller media query switches the layout to a hamburger (&#9776;) menu. 
