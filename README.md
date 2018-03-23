@@ -1,6 +1,7 @@
 # nycctPortTemplate
 Template for portfolio projects for the NYCCT Web 1 class<br>
-The purpose of this repository is to contain the template for use in the web design 1 classes. The 
+The purpose of this repository is to contain the template for use in the web design 1 classes.<br>
+
 
 <h2>Main Folder</h2>
 <em>rootfolder/templates</em><br>
