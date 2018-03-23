@@ -20,6 +20,6 @@ This folder contains a live, testable, linked version of the template files. An 
 <p>This folder contains the PHP file named feedback.php to make the contact form functional. To use this file with the contact form you have two choices; 
   <ol>
     <li>You can either open the feedback.php file in a code editor and edit the urls of the contact form, success page and error page.</li>
-    <li> Recreate the PHP file using the wizard that created it in the first place. The contact form was created using the free feedback form wizard from www.sitewizard.com. You can find the wizard here: https://www.thesitewizard.com/wizards/feedbackform.shtml</li>
+    <li> Recreate the PHP file using the wizard that created it in the first place. The contact form was created using the free feedback form wizard from www.sitewizard.com. You can find the wizard here: <a target="_blank">https://www.thesitewizard.com/wizards/feedbackform.shtml</a></li>
   </ol>
 </p>
