@@ -11,7 +11,10 @@ The template is responsive. Currently it possess three media queries, though onl
 This folder contains a live, testable, linked version of the template files. An online, live version can be viewed at http://samples.pixeltao.com/ (right-click open in new tab)
 <h1>How to Use These Files</h1>
 <h2>HTML</h2>
-<p></p>
+<p>The HTML in this templates uses semantic tags almost exclusively.<br>
+  The heirarchy used on each page assumes main>section>article. The main tag hold the majority of the content on each page. When necessary content inside of the main tag is divided using section tags and the content inside of section tags is held inside of article tags.<br>
+  <strong>The Media Box:</strong> On the portfolio page the images are displayed inside a component that I have named the "media box". The media box is a figure with a image and figcaption tags inside of it. The figcaption is set to be hidden until mouse over at which point it slides up from the bottom of the frame. 
+</p>
 <h2>CSS</h2>
 <p></p>
 <h2>Javascript</h2>
