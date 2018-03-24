@@ -16,7 +16,7 @@ This folder contains a live, testable, linked version of the template files. An 
   <strong>The Media Box:</strong> On the portfolio page the images are displayed inside a component that I have named the "media box". The media box is a figure with a image and figcaption tags inside of it. The figcaption is set to be hidden until mouse over at which point it slides up from the bottom of the frame. 
 </p>
 <h2>CSS</h2>
-<p></p>
+<p><strong>Grid System: </strong> This template is based on a 12 column grid. The naming convention for the grids is col1 through col12. You can pick any combination of columns that add up to 12, so you could have col6 side by side with another col6 or a col5 next to a col7, or three col4s side by side. </p>
 <h2>Javascript</h2>
 <p></p>
 <h2>PHP</h2>
